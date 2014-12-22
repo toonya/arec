@@ -51,6 +51,7 @@ require_once('inc/metabox/showcase.php');
 require_once('inc/metabox/discount.php');
 
 require_once('inc/post-type-hotel.php');
+require_once('inc/post-type-proj.php');
 
 if(is_admin()){
 	require_once('inc/protection-code.php');

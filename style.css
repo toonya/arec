@@ -393,6 +393,24 @@ footer .copyright strong {
 .proj-describe .link-button:hover {
   background: #F4B158;
 }
+.item-list {
+  margin-top: 48px;
+}
+.item-list .item .item-wrapper {
+  background: #F2F2F2;
+  padding: 0 31px 28px;
+  border-top: 10px solid #FBB731;
+}
+.item-list .item img {
+  width: 100%;
+  display: block;
+  height: auto !important;
+}
+.item-list .item h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 8px;
+}
 body.home {
   position: absolute;
   z-index: 0;

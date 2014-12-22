@@ -41,6 +41,40 @@ get_header();
 	
 	    wp_reset_postdata();
 	?>
+
+	<?php  
+	    $item_args = array(
+	        'post_type' => 'proj',
+	        //'lang' => pll_current_language(), // query German and French posts
+	        //'lang' => 'zh', // query German and French posts
+	        //'showposts' => 5,
+	    );
+	
+	    $item_posts = new WP_Query($item_args);
+	
+	    $totle = $item_posts->found_posts;
+	
+	    if($totle>=1):;?>
+		
+			<div class="item-list">
+				<div class="container">
+					<div class="row">
+						<?php while ($item_posts->have_posts()){ $item_posts->the_post();?>
+							<div class="col-xs-6 item">
+								<div class="item-wrapper">
+									<h2><?php the_title(); ?></h2>
+									<div class="item-content"><?php the_content(); ?></div>
+								</div>
+							</div>
+						<?php } ?>
+					</div>
+				</div>
+			</div>
+	
+	    <?php endif;
+	
+	    wp_reset_postdata();
+	?>
 </div>
 
 
