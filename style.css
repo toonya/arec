@@ -293,6 +293,48 @@ body.home #carousel-home .img-wrapper {
   width: 100%;
   height: 100%;
 }
+body.home #carousel-home .carousel-caption {
+  left: 15%;
+  right: auto;
+  top: 35%;
+  bottom: 64px;
+  text-align: left;
+}
+body.home #carousel-home .carousel-caption.black-bg .advertisement,
+body.home #carousel-home .carousel-caption.black-bg .permalink,
+body.home #carousel-home .carousel-caption.black-bg h2 {
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+}
+body.home #carousel-home .carousel-caption.black-bg .advertisement {
+  display: inline-block;
+  font-size: 18px;
+}
+body.home #carousel-home .carousel-caption.black-bg h2 {
+  position: relative;
+  margin: 12px 0;
+  font-size: 48px;
+}
+body.home #carousel-home .carousel-caption.black-bg h2::before {
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 100%;
+  content: ' ';
+  top: -12px;
+  left: 0;
+}
+body.home #carousel-home .carousel-caption.black-bg .permalink {
+  background: #FBB731;
+  font-size: 13px;
+  text-shadow: 1px 1px 1px #888;
+  transition: 1s;
+}
+body.home #carousel-home .carousel-caption.black-bg .permalink:hover {
+  background: #F4B158;
+  transition: 0s;
+}
 body.home #carousel-home .img-wrapper {
   position: relative;
 }

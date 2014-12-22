@@ -20,12 +20,14 @@
             while ($hotel_posts->have_posts()) {         
                 $hotel_posts->the_post();
                 ?>
-                <div class="item <?php if($hotel_posts->current_post==0) echo active; ?>">
+                <div class="item <?php if($hotel_posts->current_post==0) echo 'active'; ?>">
                     <div class="img-wrapper">
                         <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full')[0]; ?>" alt="...">
                     </div>
-                    <div class="carousel-caption">
-                        ...
+                    <div class="carousel-caption black-bg">
+                        <div class="advertisement"><?php echo get_post_meta(get_the_ID(), 'hotel_advertisement', true ); ?></div>
+                        <h2><?php the_title(); ?></h2>
+                        <a class="permalink" href="<?php echo get_permalink();?>">了解更多</a>
                     </div>
                 </div>
 
