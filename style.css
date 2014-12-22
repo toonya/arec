@@ -274,6 +274,124 @@ body {
 }
 .main {
   padding-top: 80px;
+  padding-bottom: 38px;
+}
+header {
+  height: 80px;
+  background: #000;
+}
+header .logo {
+  display: inline-block;
+}
+header .logo img {
+  display: block;
+  height: 60px;
+  margin-top: 10px;
+}
+header .language {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  font-size: 12px;
+}
+header .language a {
+  font-weight: bolder;
+  transition: 1s;
+  color: #aaa;
+  font-weight: normal;
+}
+header .language a:hover {
+  color: #fdb813;
+  transition: 0s;
+}
+header .language a:hover {
+  color: #fdb813;
+  transition: 0s;
+}
+header .language a.active {
+  color: #fdb813;
+}
+header nav.navbar {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  margin: 0;
+  border: none;
+}
+header nav.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+header nav.navbar ul li {
+  display: inline-block;
+  margin-left: 38px;
+}
+header nav.navbar ul li a {
+  font-weight: bolder;
+  transition: 1s;
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  display: block;
+}
+header nav.navbar ul li a:hover {
+  color: #fdb813;
+  transition: 0s;
+}
+header nav.navbar ul li a:hover {
+  color: #fdb813;
+  transition: 0s;
+}
+header nav.navbar ul li a.active {
+  color: #db9600;
+}
+footer {
+  padding-top: 60px;
+  background: #A9A9A9;
+  font-size: 12px;
+}
+footer .one {
+  color: #fff;
+}
+footer .two {
+  color: #cfcfcf;
+}
+footer .footer-logo {
+  display: block;
+  height: 114px;
+  position: relative;
+  margin-top: -24px;
+  float: right;
+}
+footer .bottom-bar {
+  margin-top: 32px;
+  background: #6F6F6F;
+  height: 30px;
+  line-height: 30px;
+  color: #ababab;
+}
+footer .bottom-bar .beian {
+  color: #fdb813;
+}
+footer .copyright strong {
+  font-family: Arial, sans-serif;
+}
+.proj-describe {
+  font-size: 16px;
+  color: #2d2d2d;
+  text-align: justify;
+}
+.proj-describe img {
+  padding-bottom: 16px;
+}
+.proj-describe .link-button {
+  background: #FBB731;
+  color: #fff;
+  padding: 0 22px;
+}
+.proj-describe .link-button:hover {
+  background: #F4B158;
 }
 body.home {
   position: absolute;
@@ -379,93 +497,4 @@ body.home footer {
   line-height: 40px;
   color: #aaa;
   font-size: 12px;
-}
-body.home footer .copyright strong {
-  font-family: Arial, sans-serif;
-}
-header {
-  height: 80px;
-  background: #000;
-}
-header .logo {
-  display: inline-block;
-}
-header .logo img {
-  display: block;
-  height: 60px;
-  margin-top: 10px;
-}
-header .language {
-  position: absolute;
-  right: 15px;
-  top: 13px;
-  font-size: 12px;
-}
-header .language a {
-  font-weight: bolder;
-  transition: 1s;
-  color: #aaa;
-  font-weight: normal;
-}
-header .language a:hover {
-  color: #fdb813;
-  transition: 0s;
-}
-header .language a:hover {
-  color: #fdb813;
-  transition: 0s;
-}
-header .language a.active {
-  color: #fdb813;
-}
-header nav.navbar {
-  position: absolute;
-  right: 15px;
-  top: 30px;
-  margin: 0;
-  border: none;
-}
-header nav.navbar ul {
-  margin: 0;
-  padding: 0;
-}
-header nav.navbar ul li {
-  display: inline-block;
-  margin-left: 38px;
-}
-header nav.navbar ul li a {
-  font-weight: bolder;
-  transition: 1s;
-  line-height: 50px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: normal;
-  display: block;
-}
-header nav.navbar ul li a:hover {
-  color: #fdb813;
-  transition: 0s;
-}
-header nav.navbar ul li a:hover {
-  color: #fdb813;
-  transition: 0s;
-}
-header nav.navbar ul li a.active {
-  color: #db9600;
-}
-.proj-describe {
-  font-size: 16px;
-  color: #2d2d2d;
-  text-align: justify;
-}
-.proj-describe img {
-  padding-bottom: 16px;
-}
-.proj-describe .link-button {
-  background: #FBB731;
-  color: #fff;
-  padding: 0 22px;
-}
-.proj-describe .link-button:hover {
-  background: #F4B158;
 }

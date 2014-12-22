@@ -17,7 +17,139 @@ body {
 
 .main {
 	padding-top: 80px;
+	padding-bottom: 38px;
 }
+
+// ----------------------------------------
+// ! header
+// ----------------------------------------
+header {
+	height: 80px;
+	background: #000;
+
+	.logo {
+		display: inline-block;
+
+		img {
+			display: block;
+			height: 60px;
+			margin-top: 10px;
+		}
+	}
+
+	.language {
+		position: absolute;
+		right: 15px;
+		top: 13px;
+		font-size: 12px;
+		
+		a {
+			.text-hover(#fdb813);
+			color: #aaa;
+			font-weight: normal;
+
+			&.active {
+				color: #fdb813;
+			}
+		}
+	}
+
+	nav.navbar {
+		position: absolute;
+		right: 15px;
+		top: 30px;
+		margin: 0;
+		border: none;
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin-left: 38px;
+
+				a {
+					.text-hover(#fdb813);
+					line-height: 50px;
+					color: #fff;
+					font-size: 18px;
+					font-weight: normal;
+					display: block;
+
+					&.active {
+						color: #fdb813-#222;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	padding-top: 60px;
+	background: #A9A9A9;
+	font-size: 12px;
+
+	.one {
+		color: #fff;
+	}
+
+	.two {
+		color: #BEBEBE+#111;
+	}
+
+	.footer-logo {
+		display: block;
+		height: 114px;
+		position: relative;
+		margin-top: -24px;
+		float: right;
+	}
+
+	.bottom-bar {
+		margin-top: 32px;
+		background: #6F6F6F;
+		height: 30px;
+		line-height: 30px;
+		color: #ababab;
+
+		.beian {
+			color: #fdb813;
+		}
+	}
+
+	.copyright {
+
+		strong {
+			font-family: Arial, sans-serif;
+		}
+	}
+}
+
+.proj-describe {
+	font-size: 16px;
+	color: #2d2d2d;
+	text-align: justify;
+
+	img {
+		padding-bottom: 16px;
+	}
+
+	.link-button {
+		background: #FBB731;
+		color: #fff;
+		padding: 0 22px;
+
+		&:hover {
+			background: #F4B158;
+		}
+	}
+}
+
+// ----------------------------------------
+// ! home special
+// ----------------------------------------
 
 body.home {
 	position: absolute;
@@ -134,98 +266,5 @@ body.home {
 		line-height: 40px;
 		color: #aaa;
 		font-size: 12px;
-
-		.copyright {
-
-			strong {
-				font-family: Arial, sans-serif;
-			}
-		}
-	}
-}
-
-// ----------------------------------------
-// ! header
-// ----------------------------------------
-header {
-	height: 80px;
-	background: #000;
-
-	.logo {
-		display: inline-block;
-
-		img {
-			display: block;
-			height: 60px;
-			margin-top: 10px;
-		}
-	}
-
-	.language {
-		position: absolute;
-		right: 15px;
-		top: 13px;
-		font-size: 12px;
-		
-		a {
-			.text-hover(#fdb813);
-			color: #aaa;
-			font-weight: normal;
-
-			&.active {
-				color: #fdb813;
-			}
-		}
-	}
-
-	nav.navbar {
-		position: absolute;
-		right: 15px;
-		top: 30px;
-		margin: 0;
-		border: none;
-
-		ul {
-			margin: 0;
-			padding: 0;
-
-			li {
-				display: inline-block;
-				margin-left: 38px;
-
-				a {
-					.text-hover(#fdb813);
-					line-height: 50px;
-					color: #fff;
-					font-size: 18px;
-					font-weight: normal;
-					display: block;
-
-					&.active {
-						color: #fdb813-#222;
-					}
-				}
-			}
-		}
-	}
-}
-
-.proj-describe {
-	font-size: 16px;
-	color: #2d2d2d;
-	text-align: justify;
-
-	img {
-		padding-bottom: 16px;
-	}
-
-	.link-button {
-		background: #FBB731;
-		color: #fff;
-		padding: 0 22px;
-
-		&:hover {
-			background: #F4B158;
-		}
 	}
 }
