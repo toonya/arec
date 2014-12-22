@@ -1,0 +1,117 @@
+/*  
+Theme Name: arec
+Theme URI: 
+Description: 
+Version: 
+Author: 
+Author URI: 
+Tags: 
+*/
+
+@import 'basic.less';
+
+body.home {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	overflow: hidden;
+
+	#carousel-home {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #000;
+
+		.carousel-inner, .item, .img-wrapper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.img-wrapper {
+			position: relative;
+			
+			img {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.carousel-indicators .active {
+			margin: 0 5px;
+		}
+
+		.carousel-indicators li {
+			margin: 1px 6px;
+		}
+	}
+
+	footer {
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		height: 40px;
+		line-height: 40px;
+		color: #aaa;
+		font-size: 12px;
+
+		.copyright {
+
+			strong {
+				font-family: Arial, sans-serif;
+			}
+		}
+	}
+}
+
+// ----------------------------------------
+// ! header
+// ----------------------------------------
+header {
+	height: 80px;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	.logo {
+		display: inline-block;
+
+		img {
+			display: block;
+			height: 60px;
+			margin-top: 10px;
+		}
+	}
+
+	.language {
+		position: absolute;
+		right: 15px;
+		top: 13px;
+		font-size: 12px;
+		
+		a {
+			color: #aaa;
+
+			&.active {
+				color: #fdb813;
+			}
+		}
+	}
+}

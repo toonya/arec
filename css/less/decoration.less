@@ -1,0 +1,64 @@
+
+// ----------------------------------------
+// ! Overline in the background
+// ----------------------------------------
+
+.text-bg-overline(@font-size;@position-fix:0px;@position:center;) {
+  a{
+  	text-align: @position;
+    padding:15px;
+    font-size:@font-size;
+  }
+  &::after{
+    display:block;
+    margin-top:-@font-size/2-10px-@position-fix;
+    width:100%;
+    border-top:solid 1px #aaa;
+    content:' ';
+  }
+}
+
+// ----------------------------------------
+// ! A simple hover effect
+// ----------------------------------------
+
+.text-hover(@color;@over:0s;@leave:1s) {
+    font-weight:bolder;
+    transition:@leave;
+    &:hover{
+      color:@color;
+      transition:@over;
+    }
+}
+
+// ----------------------------------------
+// ! add icon before content
+// ----------------------------------------
+.icon-before {
+  
+}
+
+.count-down {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -20px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e023';
+  }
+}
+
+// ----------------------------------------
+// ! grid
+// ----------------------------------------
+
+.img-resp-block {
+  display: block;
+  width: 100%;
+}
+
+.row-block {
+  height: 30px;
+  width: 100%;
+}

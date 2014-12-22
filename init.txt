@@ -1,0 +1,7 @@
+1. npm install  也许可以用maybe那条替代，而且可能速度更快。
+2. npm install grunt-autoprefixer
+3. grunt watch
+
+
+
+maybe need to npm install grunt --save-dev

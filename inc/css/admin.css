@@ -1,0 +1,99 @@
+/*!
+ * Bootstrap v3.0.0
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
+#adminmenuback {
+  z-index: 0;
+}
+.tab-container {
+  margin-top: 48px;
+}
+#banner-option .banner-img {
+  margin: 48px 3px;
+}
+#banner-option input,
+#banner-option textarea {
+  margin-bottom: 24px;
+}
+#banner-option .preview {
+  margin: 24px 0;
+}
+.wp-editor-wrap * {
+  box-sizing: content-box;
+}
+#banner-option *,
+.media-modal ul * {
+  box-sizing: border-box;
+}
+.inputError {
+  border-color: red !important;
+}
+#titlewrap #title-prompt-text {
+  padding: 0 10px;
+  line-height: 1.7em;
+}
+#wpwrap {
+  background: #eee;
+}
+[role="form"] {
+  margin: 36px 0 0;
+}
+[role="form"].side-form {
+  margin: 12px 0 0;
+}
+.showcase {
+  padding: 15px;
+}
+.showcase .item {
+  box-shadow: 0 0 5px #aaa;
+  margin: 10px 20px 10px 0;
+  display: inline-block;
+}
+.showcase .item.template {
+  margin: 0;
+  padding: 0;
+}
+.showcase .item .edit-area {
+  position: relative;
+}
+.showcase .item .close {
+  float: right;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #ccc;
+  position: absolute;
+  top: 0px;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+  padding: 0 3px 4px;
+  opacity: 1;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border: 1px solid #fff;
+}
+.showcase .item .close:hover {
+  color: #fff;
+}
+.title-content .tab-content {
+  padding-top: 12px;
+}
+.title-content input {
+  margin-bottom: 12px;
+}
+#post-translations td.pll-edit-column {
+  padding-top: 10px;
+}
+/* Small devices (tablets, 480px and up) */
+/* @media (min-width: 480px) { } */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
