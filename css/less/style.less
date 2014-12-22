@@ -11,6 +11,14 @@ Tags:
 @import 'basic.less';
 @import 'decoration.less';
 
+body {
+	background: #fff;
+}
+
+.main {
+	padding-top: 80px;
+}
+
 body.home {
 	position: absolute;
 	z-index: 0;
@@ -20,6 +28,14 @@ body.home {
 	bottom: 0;
 
 	overflow: hidden;
+
+	header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+	}
 
 	#carousel-home {
 		position: absolute;
@@ -134,11 +150,6 @@ body.home {
 header {
 	height: 80px;
 	background: #000;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 10;
 
 	.logo {
 		display: inline-block;
@@ -195,6 +206,26 @@ header {
 					}
 				}
 			}
+		}
+	}
+}
+
+.proj-describe {
+	font-size: 16px;
+	color: #2d2d2d;
+	text-align: justify;
+
+	img {
+		padding-bottom: 16px;
+	}
+
+	.link-button {
+		background: #FBB731;
+		color: #fff;
+		padding: 0 22px;
+
+		&:hover {
+			background: #F4B158;
 		}
 	}
 }

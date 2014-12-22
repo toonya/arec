@@ -269,6 +269,12 @@ a:hover {
   height: 30px;
   width: 100%;
 }
+body {
+  background: #fff;
+}
+.main {
+  padding-top: 80px;
+}
 body.home {
   position: absolute;
   z-index: 0;
@@ -277,6 +283,13 @@ body.home {
   right: 0;
   bottom: 0;
   overflow: hidden;
+}
+body.home header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 body.home #carousel-home {
   position: absolute;
@@ -373,11 +386,6 @@ body.home footer .copyright strong {
 header {
   height: 80px;
   background: #000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
 }
 header .logo {
   display: inline-block;
@@ -444,4 +452,20 @@ header nav.navbar ul li a:hover {
 }
 header nav.navbar ul li a.active {
   color: #db9600;
+}
+.proj-describe {
+  font-size: 16px;
+  color: #2d2d2d;
+  text-align: justify;
+}
+.proj-describe img {
+  padding-bottom: 16px;
+}
+.proj-describe .link-button {
+  background: #FBB731;
+  color: #fff;
+  padding: 0 22px;
+}
+.proj-describe .link-button:hover {
+  background: #F4B158;
 }
