@@ -252,6 +252,23 @@ a:hover {
 .container.position {
   position: relative;
 }
+.count-down {
+  position: relative;
+}
+.count-down::before {
+  position: absolute;
+  left: -20px;
+  font-family: 'Glyphicons Halflings';
+  content: '\e023';
+}
+.img-resp-block {
+  display: block;
+  width: 100%;
+}
+.row-block {
+  height: 30px;
+  width: 100%;
+}
 body.home {
   position: absolute;
   z-index: 0;
@@ -335,8 +352,54 @@ header .language {
   font-size: 12px;
 }
 header .language a {
+  font-weight: bolder;
+  transition: 1s;
   color: #aaa;
+  font-weight: normal;
+}
+header .language a:hover {
+  color: #fdb813;
+  transition: 0s;
+}
+header .language a:hover {
+  color: #fdb813;
+  transition: 0s;
 }
 header .language a.active {
   color: #fdb813;
+}
+header nav.navbar {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  margin: 0;
+  border: none;
+}
+header nav.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+header nav.navbar ul li {
+  display: inline-block;
+  margin-left: 38px;
+}
+header nav.navbar ul li a {
+  font-weight: bolder;
+  transition: 1s;
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  display: block;
+}
+header nav.navbar ul li a:hover {
+  color: #fdb813;
+  transition: 0s;
+}
+header nav.navbar ul li a:hover {
+  color: #fdb813;
+  transition: 0s;
+}
+header nav.navbar ul li a.active {
+  color: #db9600;
 }
