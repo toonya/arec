@@ -58,7 +58,7 @@ get_header();
 		
 			<div class="item-list">
 				<div class="container">
-					<div class="row">
+					<div class="row js-masonry" data-masonry-options='{"itemSelector": ".item"}'>
 						<?php while ($item_posts->have_posts()){ $item_posts->the_post();?>
 							<div class="col-xs-6 item">
 								<div class="item-wrapper">

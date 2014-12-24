@@ -27,7 +27,7 @@
                     <div class="carousel-caption black-bg">
                         <div class="advertisement"><?php echo get_post_meta(get_the_ID(), 'hotel_advertisement', true ); ?></div>
                         <h2><?php the_title(); ?></h2>
-                        <a class="permalink" href="<?php echo get_permalink();?>">了解更多</a>
+                        <a class="permalink" href="<?php echo get_permalink();?>"><?php pll_e('了解更多'); ?></a>
                     </div>
                 </div>
 

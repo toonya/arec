@@ -1,8 +1,7 @@
 <?php  
-$footer_tmp_slug = pll_current_language();
+$footer_tmp_slug = 'content';
 if(is_front_page())
-    $footer_tmp_slug .= '-home';
+    $footer_tmp_slug = 'home';
 
 get_footer($footer_tmp_slug);
-
 ?>

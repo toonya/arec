@@ -396,6 +396,9 @@ footer .copyright strong {
 .item-list {
   margin-top: 48px;
 }
+.item-list .item {
+  margin-bottom: 30px;
+}
 .item-list .item .item-wrapper {
   background: #F2F2F2;
   padding: 0 31px 28px;
@@ -410,6 +413,43 @@ footer .copyright strong {
   font-size: 24px;
   text-align: center;
   margin: 8px;
+}
+.b-contact {
+  padding: 82px;
+  color: #eee;
+  font-size: 30px;
+  text-align: center;
+  background: #FBB731;
+  margin-top: 60px;
+}
+.business-describe a {
+  display: block;
+}
+.business-describe a .img-wrapper {
+  position: relative;
+}
+.business-describe a img {
+  width: 100%;
+  display: block;
+}
+.business-describe a .d-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  line-height: 48px;
+  padding-left: 22px;
+}
+.business-describe .d-content {
+  margin-top: 16px;
+  text-align: justify;
+  color: #2d2d2d;
+}
+.business-describe .d-content:hover {
+  color: #aaa;
 }
 body.home {
   position: absolute;
@@ -515,4 +555,5 @@ body.home footer {
   line-height: 40px;
   color: #aaa;
   font-size: 12px;
+  padding: 0;
 }

@@ -52,6 +52,7 @@ require_once('inc/metabox/discount.php');
 
 require_once('inc/post-type-hotel.php');
 require_once('inc/post-type-proj.php');
+//require_once('inc/post-type-business.php');
 
 if(is_admin()){
 	require_once('inc/protection-code.php');
@@ -262,3 +263,33 @@ function my_the_content_filter($content) {
 }
 
 add_filter( 'the_content', 'my_the_content_filter' );
+
+
+// ----------------------------------------
+// ! add translation string
+// ----------------------------------------
+$ty_translation_string = array(
+	'footer' => array(
+		'版权信息' => '2012 非洲房产 版权所有',
+		'公司名称' => '非洲房产有限公司',
+		'地址栏，行1' => '北京市朝阳区',
+		'地址栏，行2' => '朝外大街乙6号',
+		'地址栏，行3' => '朝外SOHO A区11层',
+		'咨询电话' => '咨询电话: 400-815-9888',
+		'传真' => '传真: (86 10) 6567-8383',
+		'Email' => 'Email: pr@arecafrica.com',
+	),
+	'business' => array(
+		'联系信息' => array('此处填写联系信息'),
+	),
+	'other' => array(
+		'more' => '更多',
+		'read all' => '了解更多',
+	),
+);
+
+foreach ($ty_translation_string as $part_name => $part) {
+	foreach ($part as $key => $item) {
+		is_array( $item )? pll_register_string($key, $item[0], $part_name, 1) : pll_register_string($key, $item, $part_name);
+	}
+}
