@@ -18,7 +18,7 @@
     <body class="
         <?php 
             if(wp_is_mobile()) echo ' mobile';
-            if(is_front_page()) echo ' home';
+            if(is_page_template( 'h.php' )) echo ' home';
             echo ' '.pll_current_language();
         ?>
     ">

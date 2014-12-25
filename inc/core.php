@@ -22,7 +22,7 @@ add_action('wp_dashboard_setup', 'remove_dashboard_widgets');
 // ! admin bar
 // ----------------------------------------
 if( current_user_can('level_10') )
-	show_admin_bar(true);
+	show_admin_bar(false);
 else
 	show_admin_bar(false);
 

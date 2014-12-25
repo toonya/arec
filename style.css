@@ -615,3 +615,56 @@ body.home footer {
   font-size: 12px;
   padding: 0;
 }
+body.boot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+}
+body.boot .logo1,
+body.boot .logo2,
+body.boot .text,
+body.boot .slogan,
+body.boot .links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+body.boot .logo1,
+body.boot .logo2 {
+  width: 200px;
+}
+body.boot .text .i {
+  display: inline-block;
+  font-size: 80px;
+}
+body.boot .slogan {
+  font-size: 18px;
+  color: #fff;
+}
+body.boot .links a {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 100px;
+  color: #FCB831;
+}
+body.boot .links a:nth-last-child(1) {
+  margin-right: 0;
+}
+body.boot a.button {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  height: 30px;
+  width: 30px;
+  color: #555;
+  display: block;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 15px;
+}

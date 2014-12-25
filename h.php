@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php 
+
+/**
+ * Template Name: home
+ *
+ */
+
+get_header(); ?>
 
 <!-- Modal -->
 <div id="carousel-home" class="carousel slide" data-ride="carousel">
