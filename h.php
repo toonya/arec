@@ -15,9 +15,9 @@ get_header(); ?>
         <?php  
             $hotel_args = array(
                 'post_type' => 'hotel',
-                //'lang' => pll_current_language(), // query German and French posts
-                'lang' => 'zh', // query German and French posts
-                //'showposts' => 5,
+                'lang' => pll_current_language(), // query German and French posts
+                //'lang' => 'zh', // query German and French posts
+                'showposts' => 3,
             );
 
             $hotel_posts = new WP_Query($hotel_args);
@@ -47,7 +47,7 @@ get_header(); ?>
 
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <?php  
+        <?php
             for($i=0;$i<$totle;$i++) {
                 printf('<li data-target="#carousel-home" data-slide-to="%s" %s></li>',
                     $i,
@@ -58,12 +58,14 @@ get_header(); ?>
     </ol>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
+    <?php if ( $totle > 1 ):; ?>
+        <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    <?php endif; ?>
 </div>
 
 <?php get_footer();?>

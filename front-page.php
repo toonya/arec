@@ -43,7 +43,7 @@
         <div class="links">
             <a href="<?php echo get_permalink( get_page_by_title('首页') ); ?>">简体中文</a>
             <a href="<?php echo get_permalink( get_page_by_title('Home') ); ?>">English</a>
-            <a href="#">Français</a>
+            <a href="<?php echo get_permalink( get_page_by_title('Accueil') ); ?>">Français</a>
         </div>
 
         <a href="#" id="toTheEnd" class="button">>></a>

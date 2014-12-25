@@ -31,7 +31,21 @@ get_header();
 							<div class="col-xs-4">
 								<img class="img-responsive" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>" alt="">
 								<!-- <div class="d-title"><?php the_title(); ?></div> -->
-								<div class="d-content"><?php echo wp_trim_words(get_the_content(), 50, '...<a href="'.get_the_permalink().'" class="pull-right link-button">'.pll__('更多').'</a>' ); ?></div>
+								<div class="d-content">
+									<?php 
+										$word_count = 0;
+										switch (pll_current_language()) {
+											case 'zh':
+												$word_count = 50;
+												break;
+											
+											default:
+												$word_count = 20;
+												break;
+										}
+										echo wp_trim_words(get_the_content(), $word_count, '...<a href="'.get_the_permalink().'" class="pull-right link-button">'.pll__('更多').'</a>' ); 
+									?>
+								</div>
 							</div>
 						<?php } ?>
 					</div>

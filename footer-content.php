@@ -12,8 +12,9 @@
 
                     foreach ($footer_one as $t_s) {
                         // translation string
-                        echo '<p>'.pll__($t_s).'</p>';
-                        //if(  !empty(pll__($t_s)) ) echo '<p>'.pll__($t_s).'</p>';
+                        $ts = pll__($t_s);
+                        if( !empty($ts) )
+                            echo '<p>'.$ts.'</p>';
                     }
 
                 ?>                                                                                                                       
@@ -28,8 +29,9 @@
 
                     foreach ($footer_two as $t_s) {
                         // translation string
-                        echo '<p>'.pll__($t_s).'</p>';
-                        //if(  !empty(pll__($t_s)) ) echo '<p>'.pll__($t_s).'</p>';
+                        $ts = pll__($t_s);
+                        if( !empty($ts) )
+                            echo '<p>'.$ts.'</p>';
                     }
 
                 ?>

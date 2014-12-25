@@ -1,6 +1,6 @@
 <footer>
     <div class="container">
-    	<div class="addr pull-left">地址：
+    	<div class="addr pull-left">
 			<?php  
 			    $footer_one = array(
 			        '地址栏，行1' => '北京市朝阳区',
