@@ -18,7 +18,7 @@
         <div class="copyright pull-right">
              <strong>©</strong>
              <?php 
-                 if(  !empty(pll__('2012 非洲房产 版权所有')) ) pll_e('2012 非洲房产 版权所有'); 
+                 pll_e('2012 非洲房产 版权所有'); 
                  if( pll_current_language() == 'zh' ) echo ' <span class="beian">京ICP备05014360号</span>';
              ?>
         </div>
