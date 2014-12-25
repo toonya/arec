@@ -10,8 +10,7 @@
 
 			    foreach ($footer_one as $t_s) {
 			        // translation string
-
-			        if(  !empty(pll__($t_s)) ) echo pll__($t_s);
+			        pll_e($t_s);
 			    }
 
 			?>
