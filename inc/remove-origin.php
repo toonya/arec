@@ -43,7 +43,7 @@ function my_menu_pages() {
 		'edit-comments.php',
 		'themes.php',
 		'plugins.php',
-		'options-general.php',
+		//'options-general.php',
 		'users.php'
 		);
 

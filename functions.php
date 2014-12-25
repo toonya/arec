@@ -33,14 +33,14 @@ add_action( 'admin_enqueue_scripts', 'coolwp_remove_open_sans_from_wp_core' );
 // ! some support.
 // ----------------------------------------
 require_once('inc/core.php');
-require_once('inc/add-setting.php');
+//require_once('inc/add-setting.php');
 require_once('inc/browser-check.php');
 if(belowIE(9))
 	browser_alert();
 require_once('inc/bootstrap-nav.php');
 
 //require_once('inc/post-metabox.php');
-//require_once('inc/remove-origin.php');
+require_once('inc/remove-origin.php');
 
 require_once('inc/change-login-area.php');
 //require_once('inc/qn/qn-support.php');
@@ -60,11 +60,11 @@ if(is_admin()){
 
 
 
-if(is_admin()){
-	require_once('inc/img-management.php');
-	new TY_img_management('home','幻灯片','图片规格描述,未添加');
-	//new TY_img_management('slug_prefix','menu-name','description');
-}
+// if(is_admin()){
+// 	//require_once('inc/img-management.php');
+// 	//new TY_img_management('home','幻灯片','图片规格描述,未添加');
+// 	//new TY_img_management('slug_prefix','menu-name','description');
+// }
 
 
 // ----------------------------------------
@@ -79,8 +79,8 @@ add_action( 'admin_menu', 'admin_menu_page' );
 
 function admin_menu_page(){
     add_menu_page( '导航菜单', '导航菜单', 'manage_options', 'nav-menus.php', '', '', 99 );
-    add_menu_page( '邮箱配置', '邮箱配置', 'manage_options', 'options-general.php?page=wp-mail-smtp/wp_mail_smtp.php', '', '', 100 );
-    add_menu_page( '新闻', '新闻', 'manage_options', 'edit.php', '', '', 1 );
+    //add_menu_page( '邮箱配置', '邮箱配置', 'manage_options', 'options-general.php?page=wp-mail-smtp/wp_mail_smtp.php', '', '', 100 );
+    //add_menu_page( '新闻', '新闻', 'manage_options', 'edit.php', '', '', 1 );
 }
 
 // ----------------------------------------
