@@ -451,6 +451,64 @@ footer .copyright strong {
 .business-describe .d-content:hover {
   color: #aaa;
 }
+.main.page {
+  color: #888;
+}
+.main.page h1 {
+  margin-bottom: 24px;
+  color: #FCB831;
+}
+body.fix-footer {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+body.fix-footer footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+body.zh .main.page p,
+body.zh .single-content .content p,
+body.zh .tab-content p {
+  text-indent: 2em;
+}
+.single-content .content {
+  margin-top: 24px;
+}
+.main.tab-nav {
+  padding-top: 0;
+}
+.main.tab-nav .nav-tabs {
+  margin: 0;
+  display: block;
+  text-align: center;
+  background: #eee;
+}
+.main.tab-nav .nav-tabs li {
+  display: inline-block;
+  float: none;
+}
+.main.tab-nav .nav-tabs li a {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #aaa;
+  transition: .5s;
+}
+.main.tab-nav .nav-tabs li a:hover {
+  color: #000;
+}
+.main.tab-nav .nav-tabs li.active a {
+  color: #666;
+}
+.main.tab-nav .tab-content {
+  margin-top: 48px;
+  color: #666;
+}
 body.home {
   position: absolute;
   z-index: 0;

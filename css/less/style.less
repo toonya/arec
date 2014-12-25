@@ -224,6 +224,96 @@ footer {
 }
 
 // ----------------------------------------
+// ! page
+// ----------------------------------------
+.main.page {
+	color: #888;
+
+	h1 {
+		margin-bottom: 24px;
+		color: #FCB831;
+	}
+}
+
+// ----------------------------------------
+// ! fix-footer
+// ----------------------------------------
+body.fix-footer {
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
+// ----------------------------------------
+// ! zh p
+// ----------------------------------------
+body.zh {
+	.main.page, .single-content .content, .tab-content {
+		p {
+			text-indent: 2em;
+		}
+	}
+}
+
+// ----------------------------------------
+// ! single-page
+// ----------------------------------------
+.single-content {
+	.content {
+		margin-top: 24px;
+	}
+}
+
+// ----------------------------------------
+// ! intro
+// ----------------------------------------
+.main.tab-nav {
+	padding-top: 0;
+
+	.nav-tabs {
+		margin: 0;
+		display: block;
+		text-align: center;
+		background: #eee;
+
+		li {
+			display: inline-block;
+			float: none;
+
+			a {
+				border-top: none;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				color: #aaa;
+				transition: .5s;
+
+				&:hover {
+					color: #000;
+				}
+			}
+
+			&.active a {
+				color: #666;
+			}
+		}
+	}
+
+	.tab-content {
+		margin-top: 48px;
+		color: #666;
+	}
+}
+
+// ----------------------------------------
 // ! home special
 // ----------------------------------------
 

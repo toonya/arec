@@ -19,7 +19,7 @@
         <?php 
             if(wp_is_mobile()) echo ' mobile';
             if(is_front_page()) echo ' home';
-            //echo pll_current_language();
+            echo ' '.pll_current_language();
         ?>
     ">
        <header><div class="container position">

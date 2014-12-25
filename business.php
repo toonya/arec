@@ -11,8 +11,7 @@ get_header();
 	<?php  
 	    $business_args = array(
 	        'post_type' => 'page',
-	        //'lang' => pll_current_language(), // query German and French posts
-	        'lang' => 'zh', // query German and French posts
+	        'lang' => pll_current_language(), // query German and French posts
 	        //'showposts' => 5,
 	        'post_parent' => get_the_ID(),
 	        'orderby' => 'menu_order',
