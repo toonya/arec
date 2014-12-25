@@ -241,31 +241,6 @@ add_filter( 'wp_title', 'theme_name_wp_title', 10, 2 );
 
 
 // ----------------------------------------
-// ! filter content with discount
-// ----------------------------------------
-
-function my_the_content_filter($content) {
-  
-  $id = $GLOBALS['post']->ID;
-  $meta_discount = array('is_discount','discount_start','discount_finish');
-  $discount = array();
-
-  foreach ($meta_discount as $key) {
-  	 $discount[$key] = ( ! empty(get_post_meta( $id, $key)) )? get_post_meta( $id, $key)[0] : '';
-  }
-
-  // assuming you have created a page/post entitled 'debug'
-  if ($discount['is_discount']) {
-  	return '<p class="text-danger" data-time-container><strong>[限时优惠] 优惠时间: <span data-translate="time" data-time="'.$discount['discount_start'].'"></span>-<span data-translate="time" data-time="'.$discount['discount_finish'].'"></span>, 具体请咨询客服人员</strong></p>'.$content;
-  }
-  // otherwise returns the database content
-  return $content;
-}
-
-add_filter( 'the_content', 'my_the_content_filter' );
-
-
-// ----------------------------------------
 // ! add translation string
 // ----------------------------------------
 $ty_translation_string = array(
