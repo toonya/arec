@@ -23,17 +23,15 @@ get_header();
 	    $totle = $proj_posts->found_posts;
 	    $intro_nav = '';
 	    $intro_content = '';
-		$current = 0;
 
 	    if($totle>=1) {
 	    	while ($proj_posts->have_posts()) {
 	    		$proj_posts->the_post();
 
 	    		echo '<img class="img-responsive" src="'.wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full')[0].'" alt="">';
-	    		
-	    		get_template_part('content', 'intro-'.$current);
 
-	    		$current++;
+	    		if( isset($post->menu_order) && is_int($post->menu_order) )
+	    			get_template_part('content', 'intro-'.$post->menu_order);
 	    	}
 	    }
 	    

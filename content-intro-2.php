@@ -1,10 +1,6 @@
-<section class="three">
+<section class="two">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-2"></div>
-			<div class="col-sm-8">
-				<?php the_content(); ?>
-			</div>
-		</div>
+		<h2><?php the_title(); ?></h2>
+		<div class="columns-2"><?php the_content(); ?></div>
 	</div>
 </section>
