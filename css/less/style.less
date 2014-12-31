@@ -20,6 +20,10 @@ body {
 	padding-bottom: 38px;
 }
 
+.columns-2 {
+	columns: 2;
+}
+
 // ----------------------------------------
 // ! header
 // ----------------------------------------
@@ -276,6 +280,38 @@ body.zh {
 // ----------------------------------------
 // ! intro
 // ----------------------------------------
+.main.intro {
+	padding-top: 0;
+	background: #F4F4F4;
+
+	section {
+		padding: 24px 0 72px;
+	}
+
+	h2 {
+		margin: 12px 0 24px;
+	}
+
+	table#team {
+		
+		tbody {
+			border-left: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+
+		thead {
+			background: #aaa;
+
+			th {
+				font-weight: normal;
+			}
+		}
+
+		td {
+			border-right: 1px solid #ddd;
+		}
+	}
+}
 .main.tab-nav {
 	padding-top: 0;
 
@@ -472,6 +508,8 @@ body.boot {
 	}
 
 	.links {
+		top: 60%;
+
 		a {
 			display: inline-block;
 			font-size: 16px;

@@ -1,6 +1,7 @@
 <?php
 /**
- * Template Name: intro & contact
+ * Template Name: intro 
+ * & contact
  *
  */
 
@@ -22,43 +23,24 @@ get_header();
 	    $totle = $proj_posts->found_posts;
 	    $intro_nav = '';
 	    $intro_content = '';
-	
-	    if($totle>=1) {
-	    	while ($proj_posts->have_posts()){ 
-	    		$proj_posts->the_post();
-	    		
-	    		$intro_nav .= sprintf('<li role="presentation"%s><a href="#tabs%s" aria-controls="tabs%s" role="tab" data-toggle="tab">%s</a></li>', 
-	    			( $proj_posts->current_post == 0 ) ? ' class="active"' : '',
-	    			$proj_posts->current_post.get_the_ID(),
-	    			$proj_posts->current_post.get_the_ID(),
-	    			get_the_title()
-	    		);
+		$current = 0;
 
-	    		$intro_content .= sprintf('<div role="tabpanel" class="tab-pane%s" id="tabs%s"><div class="container">%s</div></div>',
-	    			( $proj_posts->current_post == 0 ) ? ' active' : '',
-	    			$proj_posts->current_post.get_the_ID(),
-	    			apply_filters('the_content', get_the_content() )
-	    		);
+	    if($totle>=1) {
+	    	while ($proj_posts->have_posts()) {
+	    		$proj_posts->the_post();
+
+	    		echo '<img class="img-responsive" src="'.wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full')[0].'" alt="">';
+	    		
+	    		get_template_part('content', 'intro-'.$current);
+
+	    		$current++;
 	    	}
-	    } 
+	    }
+	    
 	    wp_reset_postdata();
 	?>
-	
-	<!-- Nav tabs -->
-	<ul class="nav nav-tabs" role="tablist">
-		<?php echo $intro_nav; ?>
-	</ul>
-
-	<div role="tabpanel">
-	  <!-- Tab panes -->
-	  <div class="tab-content">
-	  		<?php echo $intro_content; ?>
-	  </div>
-
-	</div>
 
 </div>
-
 
 
 <?php get_footer(); ?>

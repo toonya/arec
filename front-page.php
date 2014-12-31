@@ -28,17 +28,6 @@
 
         <img src="<?php echo get_template_directory_uri(); ?>/img/logo-footer.png" alt="" class="logo1">
         <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" class="logo2">
-        
-        <div class="text">
-            <div class="i">A</div>
-            <div class="i">R</div>
-            <div class="i">E</div>
-            <div class="i">C</div>
-        </div>
-
-        <div class="slogan">
-            Slogan Lorem ipsum dolor.
-        </div>
 
         <div class="links">
             <a href="<?php echo get_permalink( get_page_by_title('首页') ); ?>">简体中文</a>
@@ -59,17 +48,10 @@
             var t = new TimelineMax();
             t
             .set('.logo2, .logo1, .text .i', {opacity:0})
-            .set('.text .i', {rotationX:90})
             .to('.logo1', 2, {opacity:1})
             .to('.logo2', .5, {opacity:1})
             .set('.logo1', {opacity: 0})
-            .to('.logo2', .5, {left: '-=200px', opacity:0, delay: .5})
-            .set('.logo2', {left: '+=200px'})
-            .staggerTo('.text .i', 1, {opacity:1, rotationX:0}, .5)
-            .to('.text .i', 1.5, {color: '#fff'})
-            .staggerTo('.text .i', 1, {opacity:0, rotationX:90}, .5)
-            .from('.slogan', 1, {top: '-50%', opacity: 0})
-            .to('.slogan', 1, {top: '+=50%', opacity: 0, delay:1})
+            .to('.logo2', .5, {top: '-=150px', delay: .5})
             .staggerFrom('.links a', 1, { scale: 0, opacity: 0}, .5)
 
             document.getElementById("toTheEnd").addEventListener("click", function( event ) {

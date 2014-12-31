@@ -276,6 +276,11 @@ body {
   padding-top: 80px;
   padding-bottom: 38px;
 }
+.columns-2 {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+}
 header {
   height: 80px;
   background: #000;
@@ -479,6 +484,29 @@ body.zh .tab-content p {
 .single-content .content {
   margin-top: 24px;
 }
+.main.intro {
+  padding-top: 0;
+  background: #F4F4F4;
+}
+.main.intro section {
+  padding: 24px 0 72px;
+}
+.main.intro h2 {
+  margin: 12px 0 24px;
+}
+.main.intro table#team tbody {
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.main.intro table#team thead {
+  background: #aaa;
+}
+.main.intro table#team thead th {
+  font-weight: normal;
+}
+.main.intro table#team td {
+  border-right: 1px solid #ddd;
+}
 .main.tab-nav {
   padding-top: 0;
 }
@@ -645,6 +673,9 @@ body.boot .text .i {
 body.boot .slogan {
   font-size: 18px;
   color: #fff;
+}
+body.boot .links {
+  top: 60%;
 }
 body.boot .links a {
   display: inline-block;
