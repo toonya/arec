@@ -37,7 +37,7 @@ get_header();
 									<div class="d-content">
 										<?php 
 											//echo wp_trim_words(get_the_content(), 50, '...'); 
-											the_content();
+											echo wpautop(get_post_meta( get_the_ID(), 'abstract_content', true ));
 										?>
 									</div>
 								</a>

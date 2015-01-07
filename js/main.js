@@ -11,7 +11,7 @@
 		$('.main').css('min-height', h);			
 	};
 
-	$('.single-page').find('img').each(function(i,e){
+	$('.single-page, .page').find('img').each(function(i,e){
 		$(e).removeAttr('height').removeAttr('width').addClass('img-responsive');
 	})
 })(jQuery)
