@@ -39,7 +39,7 @@ if(belowIE(9))
 	browser_alert();
 require_once('inc/bootstrap-nav.php');
 
-//require_once('inc/post-metabox.php');
+require_once('inc/metabox/abstract.php');
 require_once('inc/remove-origin.php');
 
 require_once('inc/change-login-area.php');
@@ -48,7 +48,6 @@ require_once('inc/change-login-area.php');
 // metabox
 require_once('inc/metabox/get_custom_metabox_html.php');
 require_once('inc/metabox/showcase.php');
-require_once('inc/metabox/discount.php');
 
 require_once('inc/post-type-hotel.php');
 require_once('inc/post-type-proj.php');
