@@ -32,6 +32,7 @@ get_header();
 								<a href="<?php the_permalink(); ?>">
 									<div class="img-wrapper">
 										<img class="img-responsive" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>" alt="">
+										<div class="d-title"><?php the_title(); ?></div>
 									</div>
 									<div class="d-content">
 										<?php 
