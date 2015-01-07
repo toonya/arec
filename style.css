@@ -271,6 +271,10 @@ a:hover {
 }
 body {
   background: #fff;
+  min-width: 1280px;
+}
+body .container {
+  width: 1170px !important;
 }
 .main {
   padding-top: 80px;
@@ -420,12 +424,15 @@ footer .copyright strong {
   margin: 8px;
 }
 .b-contact {
-  padding: 82px;
+  padding: 60px;
   color: #eee;
-  font-size: 30px;
+  font-size: 14px;
   text-align: center;
   background: #FBB731;
   margin-top: 60px;
+}
+.b-contact h5 {
+  font-size: 22px;
 }
 .business-describe a {
   display: block;

@@ -54,7 +54,8 @@ get_header();
 
 	<div class="container">
 		<div class="b-contact">
-			<?php echo wpautop(pll__('此处填写联系信息')); ?>
+			<h5><?php echo pll_translate_string('非洲房产有限公司', 'en'); ?></h5>
+			<?php echo pll_translate_string('此处填写联系信息', 'en'); ?>
 		</div>
 	</div>
 
