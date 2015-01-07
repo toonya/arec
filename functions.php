@@ -12,10 +12,10 @@ function arec_theme_setup() {
 
 	add_theme_support( 'post-thumbnails' );
 
-    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form' ) );
+    add_theme_support( 'html5', array( 'search-form' ) );
 
     set_post_thumbnail_size( 672, 372, true );
-	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
+	//add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
 }
 
 add_action( 'after_setup_theme', 'arec_theme_setup' );
