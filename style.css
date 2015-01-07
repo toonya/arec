@@ -406,6 +406,35 @@ footer .copyright strong {
 .proj-describe .link-button:hover {
   background: #F4B158;
 }
+.proj-describe a {
+  display: block;
+}
+.proj-describe a .img-wrapper {
+  position: relative;
+}
+.proj-describe a img {
+  width: 100%;
+  display: block;
+}
+.proj-describe a .d-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 12px 0 12px 22px;
+}
+.proj-describe .d-content {
+  margin-top: 16px;
+  text-align: justify;
+  color: #2d2d2d;
+}
+.proj-describe .d-content:hover {
+  color: #aaa;
+}
 .item-list {
   margin-top: 48px;
 }
