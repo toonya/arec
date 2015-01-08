@@ -31,7 +31,7 @@ get_header(); ?>
                     <div class="img-wrapper">
                         <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full')[0]; ?>" alt="...">
                     </div>
-                    <div class="carousel-caption black-bg">
+                    <div class="carousel-caption hidden black-bg">
                         <div class="advertisement"><?php echo get_post_meta(get_the_ID(), 'hotel_advertisement', true ); ?></div>
                         <h2><?php the_title(); ?></h2>
                         <a class="permalink" href="<?php echo get_permalink();?>"><?php pll_e('了解更多'); ?></a>
