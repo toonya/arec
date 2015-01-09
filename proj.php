@@ -28,7 +28,18 @@ get_header();
 				<div class="container">
 					<div class="row">
 						<?php while ($proj_posts->have_posts()){ $proj_posts->the_post();?>
-							<div class="col-xs-4">
+							<div class="col-xs-<?php switch ($totle) {
+								case '1':
+									echo '12';
+									break;
+								case '2':
+									echo '6';
+									break;
+								
+								default:
+									echo '4';
+									break;
+							} ?>">
 								<a href="<?php the_permalink(); ?>">
 									<div class="img-wrapper">
 										<img class="img-responsive" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>" alt="">

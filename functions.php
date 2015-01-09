@@ -50,7 +50,7 @@ require_once('inc/metabox/get_custom_metabox_html.php');
 require_once('inc/metabox/showcase.php');
 
 require_once('inc/post-type-hotel.php');
-require_once('inc/post-type-proj.php');
+//require_once('inc/post-type-proj.php');
 //require_once('inc/post-type-business.php');
 
 if(is_admin()){
